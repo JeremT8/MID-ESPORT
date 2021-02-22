@@ -1,0 +1,20 @@
+[19-Feb-2021 14:46:59 UTC] PHP Warning:  Declaration of WP_CLI\LanguagePackUpgrader::download_package($package, $check_signatures = false) should be compatible with WP_Upgrader::download_package($package, $check_signatures = false, $hook_extra = Array) in phar:///usr/local/bin/wp/vendor/wp-cli/language-command/src/WP_CLI/LanguagePackUpgrader.php on line 112
+[19-Feb-2021 14:46:59 UTC] PHP Stack trace:
+[19-Feb-2021 14:46:59 UTC] PHP   1. {main}() /usr/local/bin/wp:0
+[19-Feb-2021 14:46:59 UTC] PHP   2. include() /usr/local/bin/wp:4
+[19-Feb-2021 14:46:59 UTC] PHP   3. include() phar:///usr/local/bin/wp/php/boot-phar.php:11
+[19-Feb-2021 14:46:59 UTC] PHP   4. WP_CLI\bootstrap() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[19-Feb-2021 14:46:59 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[19-Feb-2021 14:46:59 UTC] PHP   6. WP_CLI\Runner->start() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[19-Feb-2021 14:46:59 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[19-Feb-2021 14:46:59 UTC] PHP   8. WP_CLI\Runner->run_command() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[19-Feb-2021 14:46:59 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[19-Feb-2021 14:46:59 UTC] PHP  10. call_user_func:{phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[19-Feb-2021 14:46:59 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[19-Feb-2021 14:46:59 UTC] PHP  12. call_user_func:{phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[19-Feb-2021 14:46:59 UTC] PHP  13. Core_Language_Command->install() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[19-Feb-2021 14:46:59 UTC] PHP  14. Core_Language_Command->download_language_pack() phar:///usr/local/bin/wp/vendor/wp-cli/language-command/src/Core_Language_Command.php:204
+[19-Feb-2021 14:46:59 UTC] PHP  15. WP_CLI\Utils\get_upgrader() phar:///usr/local/bin/wp/vendor/wp-cli/language-command/src/WP_CLI/CommandWithTranslation.php:231
+[19-Feb-2021 14:46:59 UTC] PHP  16. spl_autoload_call() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/utils-wp.php:138
+[19-Feb-2021 14:46:59 UTC] PHP  17. Composer\Autoload\ClassLoader->loadClass() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/utils-wp.php:138
+[19-Feb-2021 14:46:59 UTC] PHP  18. Composer\Autoload\includeFile() phar:///usr/local/bin/wp/vendor/composer/ClassLoader.php:322
