@@ -18,3 +18,10 @@
 [19-Feb-2021 14:46:59 UTC] PHP  16. spl_autoload_call() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/utils-wp.php:138
 [19-Feb-2021 14:46:59 UTC] PHP  17. Composer\Autoload\ClassLoader->loadClass() phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/utils-wp.php:138
 [19-Feb-2021 14:46:59 UTC] PHP  18. Composer\Autoload\includeFile() phar:///usr/local/bin/wp/vendor/composer/ClassLoader.php:322
+[22-Feb-2021 14:06:59 UTC] PHP Warning:  copy(/var/www/html/MID-ESPORT/wp/wp-admin/includes/update-core.php): failed to open stream: Permission denied in /var/www/html/MID-ESPORT/wp/wp-admin/includes/class-wp-filesystem-direct.php on line 309
+[22-Feb-2021 14:06:59 UTC] PHP Stack trace:
+[22-Feb-2021 14:06:59 UTC] PHP   1. {main}() /var/www/html/MID-ESPORT/wp/wp-admin/update-core.php:0
+[22-Feb-2021 14:06:59 UTC] PHP   2. do_core_upgrade() /var/www/html/MID-ESPORT/wp/wp-admin/update-core.php:1069
+[22-Feb-2021 14:06:59 UTC] PHP   3. Core_Upgrader->upgrade() /var/www/html/MID-ESPORT/wp/wp-admin/update-core.php:840
+[22-Feb-2021 14:06:59 UTC] PHP   4. WP_Filesystem_Direct->copy() /var/www/html/MID-ESPORT/wp/wp-admin/includes/class-core-upgrader.php:157
+[22-Feb-2021 14:06:59 UTC] PHP   5. copy() /var/www/html/MID-ESPORT/wp/wp-admin/includes/class-wp-filesystem-direct.php:309
